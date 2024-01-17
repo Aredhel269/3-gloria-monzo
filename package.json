@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Aredhel269/learnyounode/issues"
   },
-  "homepage": "https://github.com/Aredhel269/learnyounode#readme"
+  "homepage": "https://github.com/Aredhel269/learnyounode#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
 }

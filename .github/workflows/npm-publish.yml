@@ -6,7 +6,7 @@ name: Exercicis learnyounode Sprint 3
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -23,3 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Build project
+        run: npm build
+
+      - name: Check code syntax
+        run: npm lint
+          
