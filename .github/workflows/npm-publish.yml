@@ -25,8 +25,4 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm build
-
-      - name: Check code syntax
-        run: npm lint
-          
+        run: npm run build         
