@@ -1,12 +1,12 @@
-// importació moduls
+// Importació moduls
 const http = require("http");
 
-// obtenim la url
+// Obtenim la url
 const URL = process.argv[2]
 
 //
 http.get(URL, (response) => {
-    // convertim els buffers a string
+    // Convertim els buffers a string
     response.setEncoding('utf8')
 
     response.on('data', (data) => {

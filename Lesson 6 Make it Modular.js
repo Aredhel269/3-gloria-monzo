@@ -4,7 +4,7 @@ const path = require("path");
 let directori = process.argv[2];
 let extensio = process.argv[3];
 
-//funció llamada
+// Funció llamada
 mymodule(directori, extensio, (error, files) => {
   if (error) {
     console.error(error);

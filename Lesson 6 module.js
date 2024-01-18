@@ -1,9 +1,6 @@
-// fer export      module.exports = function (args) {  ...  }
-
 const fs = require("fs");
 
-//funció declarada
-
+// Funció declarada
 module.exports = function hola(destino, extens, c) {
   fs.readdir(destino, (error, files) => {
     if (error) {
@@ -14,19 +11,3 @@ module.exports = function hola(destino, extens, c) {
     }
   });
 };
- /*
-mymodule(directory, ext, function (err, files) {
-  if (err) {
-    return console.error("error:", err);
-  }
-
-  files.forEach(function (file) {
-    console.log(file);
-  });
-});*/
-//Creació del mdoul `mymodule.js`
-
-//importacio del modul
-//const fs = require('fs')
-
-//
