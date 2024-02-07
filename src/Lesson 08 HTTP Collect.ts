@@ -1,11 +1,11 @@
-const http = require("http");
+const http8 = require("http");
 const bl = require("bl");
 
-const URL = process.argv[2];
+const Url: string = process.argv[2];
 
-http.get(URL, (response) => {
+http8.get(Url, (response: any) => {
   response.pipe(
-    bl(function (err, data) {
+    bl(function (err: Error | null, data: string) {
       if (err) return console.error(err);
 
       data = data.toString();

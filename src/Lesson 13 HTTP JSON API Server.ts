@@ -1,8 +1,8 @@
-const http = require("http");
-const url = require("url");
+const http13 = require("http");
+const url13 = require("url");
 
 // Codnvertim una data en un objecte amb les parts de l'hora
-function parsetime(time) {
+function parsetime(time : any) {
   return {
     hour: time.getHours(),
     minute: time.getMinutes(),
@@ -11,16 +11,16 @@ function parsetime(time) {
 }
 
 // Convertim una data en un objecte amb el temps en format Unix
-function unixtime(time) {
+function unixtime(time: any) {
   return {
     unixtime: time.getTime(),
   };
 }
 
 // Creem el servidor HTTP
-let server = http.createServer(function (request, response) {
+let server13 = http13.createServer(function (request: any, response: any) {
     // Analitzem la URL de la sol·licitud
-  let parseUrl = url.parse(request.url, true);  
+  let parseUrl = url13.parse(request.url, true);  
   // Creem l'objecte de temps a partir del paràmetre 'iso' de la URL
   let time = new Date(parseUrl.query.iso);
   let result;

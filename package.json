@@ -4,7 +4,9 @@
   "description": "",
   "main": "ex1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch"  
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,10 @@
   },
   "homepage": "https://github.com/Aredhel269/learnyounode#readme",
   "dependencies": {
-    "through2-map": "^3.0.0"
+    "through2-map": "^3.0.0",
+    "tsc": "^2.0.4",
+    "@types/node": "^20.11.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

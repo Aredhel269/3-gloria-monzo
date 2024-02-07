@@ -2,18 +2,18 @@
 const http = require("http");
 
 // Obtenim la url
-const URL = process.argv[2]
+const url: string = process.argv[2]
 
-//
-http.get(URL, (response) => {
+// Realitzem la petició HTTP
+http.get(url, (response: any) => { // response: Buffer
     // Convertim els buffers a string
     response.setEncoding('utf8')
 
-    response.on('data', (data) => {
+    response.on('data', (data: any) => {
         console.log(data)
     });
 
-    response.on('error', (error) => {
+    response.on('error', (error: Error) => {
         console.error('error: ', error)
     });
 
@@ -21,4 +21,3 @@ http.get(URL, (response) => {
         console.log('')
     })
 });
-
