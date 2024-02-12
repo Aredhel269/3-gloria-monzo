@@ -44,4 +44,4 @@ let server13 = http13.createServer(function (request: any, response: any) {
 });
 
 // Escoltem el port proporcionat com a argument de línia de comandes
-server.listen(Number(process.argv[2]));
+server13.listen(Number(process.argv[2]));
